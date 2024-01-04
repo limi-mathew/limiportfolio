@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const ServiceStatus: React.FC = () => {
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("operational");
   const apiServiceStatusURL = import.meta.env.VITE_API_SERVICESTATUS_URL || "";
 
   const statusColor = () => {
