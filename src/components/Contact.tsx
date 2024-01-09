@@ -12,7 +12,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
   //const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "https://portfolio-7oif.onrender.com/";
-
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [subject, setSubject] = useState<string>("");
@@ -35,13 +34,21 @@ const Contact: React.FC = () => {
   const notifySentForm: React.FormEventHandler<HTMLFormElement> = async (e) => {
     setError(null);
     console.log(error);
-
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-
+    const data = {
+      name:name,
+      email: email,
+      subject: subject,
+      message: message,
+    };   
     try {
-      const response = await axios.post("https://limi-nodemailer.onrender.com/send-email", data);
-     // const response = await axios.post(apiBaseUrl, data);
+    
+      const response = await axios.post("https://limi-nodemailer.onrender.com/send-email", JSON.stringify(data), {
+    //  const response = await axios.post("http://localhost:5000/send-email", JSON.stringify(data), {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
       console.log(response);
       if (language === "DE") {
         toast.success(toastMessages.successEmailSent.de);

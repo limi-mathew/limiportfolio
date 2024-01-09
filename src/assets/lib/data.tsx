@@ -39,10 +39,10 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Limi Mathew",
-    en: "Hi, I'm Limi Mathew",
+    de: "Hi, ich bin ",
+    en: "Hi, I'm ",
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "",
   description: {
     de: "Ich bin Limi Mathew, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
     en: "I'm Limi Mathew, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
