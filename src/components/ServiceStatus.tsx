@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ServiceStatus: React.FC = () => {
   const [status, setStatus] = useState("operational");
-  const apiServiceStatusURL = import.meta.env.VITE_API_SERVICESTATUS_URL || "";
+  const apiServiceStatusURL = import.meta.env.VITE_API_SERVICESTATUS_URL || "https://run.mocky.io/v3/6c8b0b8d-2ec4-4042-b89f-f8e58a062d43";
   console.log("API Service Status URL:", apiServiceStatusURL);
 
   const statusColor = () => {
