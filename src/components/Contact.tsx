@@ -49,7 +49,8 @@ const Contact: React.FC = () => {
           'Content-Type': 'application/json',
         },
       });
-      console.log(response);
+      console.log(data,"data");
+      console.log(response,"RESPONSE");
       if (language === "DE") {
         toast.success(toastMessages.successEmailSent.de);
       } else {
