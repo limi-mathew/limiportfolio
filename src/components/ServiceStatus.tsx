@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const ServiceStatus: React.FC = () => {
   const [status, setStatus] = useState("operational");
   const apiServiceStatusURL = import.meta.env.VITE_API_SERVICESTATUS_URL || "";
+  console.log("API Service Status URL:", apiServiceStatusURL);
 
   const statusColor = () => {
     if (status === "operational") {
