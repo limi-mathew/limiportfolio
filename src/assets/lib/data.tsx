@@ -1,4 +1,4 @@
-import adobexdicon from "../../assets/icons/adobexdicon.svg";
+//import adobexdicon from "../../assets/icons/adobexdicon.svg";
 import canvaicon from "../../assets/icons/canvaicon.svg";
 import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
@@ -20,9 +20,9 @@ import spotifyicon from "../../assets/icons/spotifyicon.svg";
 import netlifyicon from "../../assets/icons/netlifyicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
 import jwticon from "../../assets/icons/jwticon.svg";
-import wordpressicon from "../../assets/icons/wordpressicon.svg";
-import shopifyicon from "../../assets/icons/shopifyicon.svg";
-import webflowicon from "../../assets/icons/webflowicon.svg";
+//import wordpressicon from "../../assets/icons/wordpressicon.svg";
+//import shopifyicon from "../../assets/icons/shopifyicon.svg";
+//import webflowicon from "../../assets/icons/webflowicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
@@ -254,47 +254,47 @@ export const skillsDataWeb = [
   },
 ] as const;
 
-export const skillsDataDesign = [
-  {
-    skillsTitle: "Design",
-    skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
-      {
-        title: "Adobe XD",
-        hash: "#Adobe XD",
-        icon: adobexdicon,
-        color: "#FF61F6",
-      },
-      { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
-    ],
-  },
-] as const;
+// export const skillsDataDesign = [
+//   {
+//     skillsTitle: "Design",
+//     skills: [
+//       { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
+//       {
+//         title: "Adobe XD",
+//         hash: "#Adobe XD",
+//         icon: adobexdicon,
+//         color: "#FF61F6",
+//       },
+//       { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
+//     ],
+//   },
+// ] as const;
 
-export const skillsDataCMS = [
-  {
-    skillsTitle: "CMS",
-    skills: [
-      {
-        title: "WordPress",
-        hash: "#WordPress",
-        icon: wordpressicon,
-        color: "#21759B",
-      },
-      {
-        title: "Shopify",
-        hash: "#Shopify",
-        icon: shopifyicon,
-        color: "#7AB55C",
-      },
-      {
-        title: "Webflow",
-        hash: "#Webflow",
-        icon: webflowicon,
-        color: "#4353FF",
-      },
-    ],
-  },
-] as const;
+// export const skillsDataCMS = [
+//   {
+//     skillsTitle: "CMS",
+//     skills: [
+//       {
+//         title: "WordPress",
+//         hash: "#WordPress",
+//         icon: wordpressicon,
+//         color: "#21759B",
+//       },
+//       {
+//         title: "Shopify",
+//         hash: "#Shopify",
+//         icon: shopifyicon,
+//         color: "#7AB55C",
+//       },
+//       {
+//         title: "Webflow",
+//         hash: "#Webflow",
+//         icon: webflowicon,
+//         color: "#4353FF",
+//       },
+//     ],
+//   },
+// ] as const;
 
 export const navLinks = [
   { de: "Home", en: "Home", hash: "#home", icon: GoHome },
