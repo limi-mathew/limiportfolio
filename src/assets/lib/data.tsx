@@ -316,12 +316,12 @@ export const sideBarRightMail = {
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/Limi Mathew/",
+    link: "https://www.linkedin.com/in/limi-mathew-senior-php-developer/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/Limi MathewC",
+    link: "https://github.com/limi-mathew/",
     icon: FiGithub,
     altimgname: "github",
   },
