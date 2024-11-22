@@ -27,12 +27,13 @@ const ServiceStatus: React.FC = () => {
 
   useEffect(() => {
     async function getStatusData() {
-      try {
+      //try {
         const response = await axios.get(apiServiceStatusURL);
         setStatus(response.data.heartbeatResponse.serviceStatus);
-      } catch (error) {
+        console.log("CONSOLE",response)
+   //   } catch (error) {
         console.error("Failed to get status from backend:", error);
-      }
+      //}
     }
 
     getStatusData();
