@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
           'Content-Type': 'application/json',
         },
       });
-      console.log(data,"data");
+      console.log(data,"data")
       console.log(response,"RESPONSE");
       if (language === "DE") {
         toast.success(toastMessages.successEmailSent.de);

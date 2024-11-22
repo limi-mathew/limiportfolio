@@ -196,24 +196,24 @@ export const skillsDataWeb = [
         icon: javascripticon,
         color: "#F7DF1E",
       },
-      {
-        title: "TypeScript",
-        hash: "#TypeScript",
-        icon: typescripticon,
-        color: "#007ACC",
-      },
+      // {
+      //   title: "TypeScript",
+      //   hash: "#TypeScript",
+      //   icon: typescripticon,
+      //   color: "#007ACC",
+      // },
       {
         title: "React",
         hash: "#React",
         icon: reacticon,
         color: "#61DAFB",
       },
-      {
-        title: "Next.js",
-        hash: "#Next.js",
-        icon: [nextjsicon, nextjsiconwhite],
-        color: ["#000000", "#FFFFFF"],
-      },
+      // {
+      //   title: "Next.js",
+      //   hash: "#Next.js",
+      //   icon: [nextjsicon, nextjsiconwhite],
+      //   color: ["#000000", "#FFFFFF"],
+      // },
       {
         title: "Node.js",
         hash: "#Node.js",
@@ -244,12 +244,12 @@ export const skillsDataWeb = [
         icon: [expressicon, expressiconwhite],
         color: ["#000000", "#FFFFFF"],
       },
-      {
-        title: "SASS/SCSS",
-        hash: "#SASS/SCSS",
-        icon: sassscssicon,
-        color: "#CC6699",
-      },
+      // {
+      //   title: "SASS/SCSS",
+      //   hash: "#SASS/SCSS",
+      //   icon: sassscssicon,
+      //   color: "#CC6699",
+      // },
     ],
   },
 ] as const;
