@@ -128,7 +128,7 @@ const ProjectSlider: React.FC = () => {
                       </div>
                     </div>
                     <div className="buttons flex gap-10">
-                      <Button
+                      {/* <Button
                         // label="Live Demo"
                         link={project.deploymenturl}
                         // iconSVG={project.deploymenticon}
@@ -142,7 +142,7 @@ const ProjectSlider: React.FC = () => {
                         // iconSVG={project.githubicon}
                         buttoncolor={project.colors.main}
                         iconcolor={project.colors.icon}
-                      />
+                      /> */}
                     </div>
                   </div>
 
@@ -168,7 +168,7 @@ const ProjectSlider: React.FC = () => {
                   alt={project.image}
                   className="h-[35vh] w-full object-cover object-top rounded-3xl"
                 />
-                <div className="buttons flex gap-10 max-lg:flex-col">
+                {/* <div className="buttons flex gap-10 max-lg:flex-col">
                   <Button
                     // label="Live Demo"
                     link={project.deploymenturl}
@@ -183,7 +183,7 @@ const ProjectSlider: React.FC = () => {
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
                   />
-                </div>
+                </div> */}
                 <p className="text-white  max-lg:text-4xl">
                   {language === "DE"
                     ? project.description
