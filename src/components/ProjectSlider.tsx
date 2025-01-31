@@ -170,14 +170,14 @@ const ProjectSlider: React.FC = () => {
                 />
                 <div className="buttons flex gap-10 max-lg:flex-col">
                   <Button
-                    label="Live Demo"
+                    // label="Live Demo"
                     link={project.deploymenturl}
                     iconSVG={project.deploymenticon}
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
                   />
                   <Button
-                    label="Github Repository"
+                    // label="Github Repository"
                     link={project.githuburl}
                     iconSVG={project.githubicon}
                     buttoncolor={project.colors.main}
