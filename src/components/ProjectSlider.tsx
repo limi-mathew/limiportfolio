@@ -131,7 +131,7 @@ const ProjectSlider: React.FC = () => {
                       <Button
                         // label="Live Demo"
                         link={project.deploymenturl}
-                        iconSVG={project.deploymenticon}
+                        // iconSVG={project.deploymenticon}
                         buttoncolor={project.colors.main}
                         iconcolor={project.colors.icon}
                         onClick={notifyServerRequest}
@@ -139,7 +139,7 @@ const ProjectSlider: React.FC = () => {
                       <Button
                         // label="Github Repository"
                         link={project.githuburl}
-                        iconSVG={project.githubicon}
+                        // iconSVG={project.githubicon}
                         buttoncolor={project.colors.main}
                         iconcolor={project.colors.icon}
                       />
@@ -172,14 +172,14 @@ const ProjectSlider: React.FC = () => {
                   <Button
                     // label="Live Demo"
                     link={project.deploymenturl}
-                    iconSVG={project.deploymenticon}
+                    // iconSVG={project.deploymenticon}
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
                   />
                   <Button
                     // label="Github Repository"
                     link={project.githuburl}
-                    iconSVG={project.githubicon}
+                    // iconSVG={project.githubicon}
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
                   />
