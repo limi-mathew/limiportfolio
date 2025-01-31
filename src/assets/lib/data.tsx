@@ -1,6 +1,6 @@
 //import adobexdicon from "../../assets/icons/adobexdicon.svg";
-import canvaicon from "../../assets/icons/canvaicon.svg";
-import figmaicon from "../../assets/icons/figmaicon.svg";
+// import canvaicon from "../../assets/icons/canvaicon.svg";
+// import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
@@ -76,7 +76,7 @@ export const projectsData = [
     description:
       "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The website is responsive and mobile-optimized.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -117,7 +117,7 @@ export const projectsData = [
       { name: "MongoDB", icon: mongodbicon },
       { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
+      // { name: "Figma", icon: figmaicon },
       { name: "Render", icon: rendericon },
     ],
     image: silentmoonMockup,
@@ -149,7 +149,7 @@ export const projectsData = [
       { name: "MongoDB", icon: mongodbicon },
       { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
+      // { name: "Figma", icon: figmaicon },
       { name: "Render", icon: rendericon },
       { name: "Trello", icon: trelloicon },
     ],
