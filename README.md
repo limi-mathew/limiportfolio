@@ -1,7 +1,8 @@
 # 👋 Hi, I'm Limi Mathew
 
 Senior PHP Laravel Developer with 6.8+ years of experience building scalable web applications, CRM systems, REST APIs, and modern full-stack solutions.
-Personal portfolio website customized from an open-source React template.This project was completed to explore modern frontend technologies including React, TypeScript, Tailwind CSS, Node.js, and Express. It helped me gain practical exposure to the React ecosystem while showcasing my primary expertise in Laravel, Vue.js, and backend application development.
+
+My Personal portfolio website customized from an open-source React template.This project was completed to explore modern frontend technologies including React, TypeScript, Tailwind CSS, Node.js, and Express. It helped me gain practical exposure to the React ecosystem while showcasing my primary expertise in Laravel, Vue.js, and backend application development.
 
 ## 🌐 Portfolio
 
