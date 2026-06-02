@@ -303,12 +303,12 @@ a {
   height: 35px;
   cursor: pointer;
 }
-
 .privacy-checkbox input {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
-
 .privacy-checkbox input:checked ~ .checkbox {
   transform: rotate(45deg);
   width: 14px;

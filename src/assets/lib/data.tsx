@@ -1,37 +1,25 @@
-//import adobexdicon from "../../assets/icons/adobexdicon.svg";
-// import canvaicon from "../../assets/icons/canvaicon.svg";
-// import figmaicon from "../../assets/icons/figmaicon.svg";
+import laravelicon from "../../assets/icons/laravelicon.svg";
+import mysqlicon from "../../assets/icons/mysqlicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
-//import typescripticon from "../../assets/icons/typescripticon.svg";
+import filamenticon from "../../assets/icons/filamenticon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
-//import nextjsicon from "../../assets/icons/nextjsicon.svg";
+import dockericon from "../../assets/icons/dockericon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
 import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
 import mongodbicon from "../../assets/icons/mongoicon.svg";
 import vuejsicon from "../../assets/icons/vueicon.svg";
-import expressicon from "../../assets/icons/expressicon.svg";
-//import sassscssicon from "../../assets/icons/sassicon.svg";
-import trelloicon from "../../assets/icons/trelloicon.svg";
+import githubicon from "../../assets/icons/githubicon.svg";
+import websocketicon from "../../assets/icons/websocket.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
-import axiosicon from "../../assets/icons/axiosicon.svg";
-import spotifyicon from "../../assets/icons/spotifyicon.svg";
-//import netlifyicon from "../../assets/icons/netlifyicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
-import jwticon from "../../assets/icons/jwticon.svg";
-//import wordpressicon from "../../assets/icons/wordpressicon.svg";
-//import shopifyicon from "../../assets/icons/shopifyicon.svg";
-//import webflowicon from "../../assets/icons/webflowicon.svg";
-import tastyMockup from "../../assets/img/tasty_mockup.webp";
-import instorMockup from "../../assets/img/instor_mockup.webp";
-import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
+import electraaMockup from "../../assets/img/electraa_mockup.png";
+import screenseedMockup from "../../assets/img/screenseed_mockup.png";
 import profilepicture from "../img/me2.jpg";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
-//import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
-import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
@@ -44,8 +32,8 @@ export const headerIntroData = {
   },
   subtitle: "",
   description: {
-    de: "Ich bin Limi Mathew, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Limi Mathew, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    de: "Als Senior PHP Laravel Entwickler mit über 6,8 Jahren Berufserfahrung entwickle ich skalierbare CRM-Systeme, Webanwendungen und RESTful APIs. Meine Schwerpunkte liegen in Laravel, Vue.js, MySQL, Docker, AWS sowie modernen Softwarearchitekturen. In diesem Portfolio präsentiere ich ausgewählte Projekte, technische Fähigkeiten und innovative Lösungen aus meiner beruflichen Praxis.",
+    en: "A Senior PHP Laravel Developer with 6.8+ years of experience in developing CRM systems, web applications, and RESTful APIs. I specialize in Laravel, Vue.js, MySQL, Docker, AWS, and modern software architecture. This portfolio showcases projects, technical expertise, and solutions I have built throughout my professional journey."
   },
   buttons: [
     {
@@ -72,97 +60,55 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Electraa CRM",
     description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+      "Ein modernes CRM-System für Elektroinstallations- und Vertragsunternehmen. Die Anwendung unterstützt die Verwaltung von Kunden, Rechnungen, Zahlungen, Projekten und interner Kommunikation über eine zentrale Plattform.",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The website is responsive and mobile-optimized.",
+      "A modern Electrical Contract Management CRM built to streamline customer management, invoice tracking, payment processing, project coordination, and internal team communication. The application focuses on scalable Laravel architecture, secure backend development, and efficient business workflow management.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "REST Api", icon: apiicon },
-      { name: "React", icon: reacticon },
-      // { name: "Figma", icon: figmaicon },
-      //{ name: "Canva", icon: canvaicon },
-      //{ name: "Netlify", icon: netlifyicon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Laravel", icon: laravelicon },
+      { name: "MySQL", icon: mysqlicon },
+      { name: "Docker", icon: dockericon },
+      { name: "REST API", icon: apiicon },
+      { name: "FilamentPHP", icon: filamenticon },
+      { name: "Render", icon: rendericon },
     ],
-    image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/Limi MathewC/Frontend_Abschlussprojekt_Tasty",
+    image: electraaMockup,
+    deploymenturl: "",
+    githuburl: "https://github.com/limi-mathew/electraa-crm",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
       icon: "white",
-      projectcolor: "#70B9BE",
+      projectcolor: "#F97316",
     },
   },
   {
-    title: "Silentmoon",
+    title: "Screenseed",
     description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+      "Mitwirkung an der Entwicklung von Screenseed, einer Plattform für Digital Signage und Besuchermanagement, die Unternehmen die Erstellung interaktiver Kioske, digitaler Anzeigen, individueller Formulare und Besucher-Workflows ermöglicht. Verantwortlich für die Backend- und Frontend-Entwicklung, Echtzeitfunktionen sowie Bereitstellungs- und Deployment-Prozesse.",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "Contributed to the development of Screenseed, a digital signage and visitor management platform that enables businesses to create interactive kiosks, digital displays, custom forms, and visitor workflows. Responsible for backend and frontend development, real-time features, and deployment processes.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      // { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
+      { name: "Laravel", icon: laravelicon },
+      { name: "Vue.js", icon: vuejsicon },
+      { name: "MySQL", icon: mysqlicon },
+      { name: "Docker", icon: dockericon },
+      { name: "WebSockets", icon: websocketicon },
+      { name: "Git", icon: githubicon },
+      { name: "REST API", icon: apiicon },
     ],
-    image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
-    githuburl:
-      "https://github.com/Limi MathewC/Fullstack_Abschlussprojekt_SilentMoon",
+    image: screenseedMockup,
+    deploymenturl: "",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
       icon: "white",
-      projectcolor: "#FFD5BD",
-    },
-  },
-  {
-    title: "Furniture Organizer",
-    description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
-    description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
-    technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      // { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
-    ],
-    image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/Limi MathewC/Furniture_MERN",
-    githubicon: FiGithub,
-    deploymenticon: FiLink,
-    colors: {
-      main: "main-btn",
-      second: "secondary-btn",
-      icon: "white",
-      projectcolor: "#E3964A",
+      projectcolor: "#F97316",
     },
   },
 ] as const;
@@ -178,6 +124,36 @@ export const skillsDataWeb = [
   {
     skillsTitle: "WebDevelopment",
     skills: [
+      {
+        title: "Laravel",
+        hash: "#Laravel",
+        icon: laravelicon,
+        color: "#F97316",
+      },
+      {
+        title: "Vue.js",
+        hash: "#Vue.js",
+        icon: vuejsicon,
+        color: "#4FC08D",
+      },
+      {
+        title: "Mysql",
+        hash: "#Mysql",
+        icon: mysqlicon,
+        color: "#F7DF1E",
+      },
+      {
+        title: "Docker",
+        hash: "#Docker",
+        icon: dockericon,
+        color: "#2496ED",
+      },
+      {
+        title: "GitHub",
+        hash: "#GitHub",
+        icon: githubicon,
+        color: "#000000",
+      },
       {
         title: "HTML",
         hash: "#html",
@@ -196,24 +172,12 @@ export const skillsDataWeb = [
         icon: javascripticon,
         color: "#F7DF1E",
       },
-      // {
-      //   title: "TypeScript",
-      //   hash: "#TypeScript",
-      //   icon: typescripticon,
-      //   color: "#007ACC",
-      // },
       {
         title: "React",
         hash: "#React",
         icon: reacticon,
         color: "#61DAFB",
       },
-      // {
-      //   title: "Next.js",
-      //   hash: "#Next.js",
-      //   icon: [nextjsicon, nextjsiconwhite],
-      //   color: ["#000000", "#FFFFFF"],
-      // },
       {
         title: "Node.js",
         hash: "#Node.js",
@@ -232,69 +196,9 @@ export const skillsDataWeb = [
         icon: mongodbicon,
         color: "#449C45",
       },
-      {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
-        color: "#4FC08D",
-      },
-      {
-        title: "Express",
-        hash: "#Express",
-        icon: [expressicon, expressiconwhite],
-        color: ["#000000", "#FFFFFF"],
-      },
-      // {
-      //   title: "SASS/SCSS",
-      //   hash: "#SASS/SCSS",
-      //   icon: sassscssicon,
-      //   color: "#CC6699",
-      // },
     ],
   },
 ] as const;
-
-// export const skillsDataDesign = [
-//   {
-//     skillsTitle: "Design",
-//     skills: [
-//       { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
-//       {
-//         title: "Adobe XD",
-//         hash: "#Adobe XD",
-//         icon: adobexdicon,
-//         color: "#FF61F6",
-//       },
-//       { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
-//     ],
-//   },
-// ] as const;
-
-// export const skillsDataCMS = [
-//   {
-//     skillsTitle: "CMS",
-//     skills: [
-//       {
-//         title: "WordPress",
-//         hash: "#WordPress",
-//         icon: wordpressicon,
-//         color: "#21759B",
-//       },
-//       {
-//         title: "Shopify",
-//         hash: "#Shopify",
-//         icon: shopifyicon,
-//         color: "#7AB55C",
-//       },
-//       {
-//         title: "Webflow",
-//         hash: "#Webflow",
-//         icon: webflowicon,
-//         color: "#4353FF",
-//       },
-//     ],
-//   },
-// ] as const;
 
 export const navLinks = [
   { de: "Home", en: "Home", hash: "#home", icon: GoHome },
@@ -316,7 +220,7 @@ export const sideBarRightMail = {
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/limi-mathew-senior-php-developer/",
+    link: "https://www.linkedin.com/in/limi-mathew-fullstack-developer/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },

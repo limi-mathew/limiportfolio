@@ -33,8 +33,6 @@ const ServiceStatus: React.FC = () => {
         setStatus(response.data.heartbeatResponse.serviceStatus);
         console.log("CONSOLE",response)
    } catch (error) {
-    console.log("CONSOLE",error)
-
         console.error("No to get status from backend:", error);
       }
     }

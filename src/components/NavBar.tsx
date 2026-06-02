@@ -80,7 +80,6 @@ const NavBar: React.FC = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className={`relative ${linkClasses}`}
-        aria-aria-current={link}
       >
         <span>
           {leftArrow}

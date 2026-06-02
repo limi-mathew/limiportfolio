@@ -11,7 +11,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
-  //const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "https://portfolio-7oif.onrender.com/";
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [subject, setSubject] = useState<string>("");
@@ -21,7 +20,7 @@ const Contact: React.FC = () => {
   const { ref } = useSectionInView("Contact");
   const { language } = useLanguage();
   const { theme } = useTheme();
-  const [error, setError] = useState<string | any>(null);
+  const [setError] = useState<string | any>(null);
 
   const animationReference = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -32,32 +31,29 @@ const Contact: React.FC = () => {
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   const notifySentForm: React.FormEventHandler<HTMLFormElement> = async (e) => {
-    setError(null);
-    console.log(error);
     e.preventDefault();
     const data = {
-      name:name,
+      name: name,
       email: email,
       subject: subject,
       message: message,
-    };   
+    };
     try {
-    
-      const response = await axios.post("https://limi-nodemailer.onrender.com/send-email", JSON.stringify(data), {
-    //  const response = await axios.post("http://localhost:5000/send-email", JSON.stringify(data), {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-      console.log(data,"data")
-      console.log(response,"RESPONSE");
+
+      await axios.post(
+        `${import.meta.env.VITE_API_URL}/send-email`,
+        data
+      );
       if (language === "DE") {
         toast.success(toastMessages.successEmailSent.de);
       } else {
         toast.success(toastMessages.successEmailSent.en);
       }
-    } catch (error) {
-      console.log(error);
+    } catch (error: any) {
+      console.log("FULL ERROR", error);
+      console.log("RESPONSE", error?.response);
+      console.log("DATA", error?.response?.data);
+
       if (language === "DE") {
         toast.error(toastMessages.failedEmailSent.de);
       } else {
@@ -134,51 +130,20 @@ import  { useState } from "react";
 // 🌈 Spreading Stardust: 
 // Crafting Cosmic Email 🌌
 
-const [sender, setSender] = "${name}${
-    lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""
-  }🚀";
-const [recipient, setRecipient] = "${email}${
-    lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : ""
-  }📧";
-const [subject, setSubject] = \n"${subject}${
-    lastUpdatedField === "subject" ? (cursorBlink ? "|" : " ") : ""
-  }✨";
+const [sender, setSender] = "${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""
+    }🚀";
+const [recipient, setRecipient] = "${email}${lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : ""
+    }📧";
+const [subject, setSubject] = \n"${subject}${lastUpdatedField === "subject" ? (cursorBlink ? "|" : " ") : ""
+    }✨";
 const [message, setMessage] = 
 \`Hello, intrepid traveler! 👋\n
 Across the cosmos, a message for you:\n
-"${wordWrap(message, 40, " ")}${
-    lastUpdatedField === "message" ? (cursorBlink ? "|" : " ") : ""
-  }"\n
+"${wordWrap(message, 40, " ")}${lastUpdatedField === "message" ? (cursorBlink ? "|" : " ") : ""
+    }"\n
 Wishing you stardust dreams,\n
 ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
 \``;
-
-  //   const codeSnippet2 = `
-  // // 🚀 Initiating Quantum Email Transmission 🪐
-  // const launchEmail = async () => {
-  //   try {
-  //     const response = await fetch('https://alpaycelik.dev/send',{
-  //     method: 'POST',
-  //     headers: {'Content-Type': 'application/json'},
-  //     body: JSON.stringify({
-  //      sender,
-  //      recipient,
-  //      subject,
-  //      message
-  //     })
-  //    });
-
-  //    if (response.ok) {
-  //    console.log('🌌 Transmission successful!');
-  //    } else {
-  //    console.error('🌠 Cosmic glitch encountered...');
-  //    }
-  //   } catch (error) {
-  //   console.error('🌪 Quantum disturbance detected:', error);
-  //   }
-  // };
-  // // 🚀 Ready for Liftoff? 🛸
-  // launchEmail();`;
 
   return (
     <React.Fragment>
@@ -250,10 +215,10 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                   input.name === "name"
                     ? name
                     : input.name === "email"
-                    ? email
-                    : input.name === "subject"
-                    ? subject
-                    : message
+                      ? email
+                      : input.name === "subject"
+                        ? subject
+                        : message
                 }
                 required
                 onFocus={() => {
@@ -265,11 +230,10 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                   setLastUpdatedField(input.name);
                 }}
                 onChange={handleInputChange}
-                className={`${
-                  theme === "dark"
+                className={`${theme === "dark"
                     ? "bg-[--blackblue] dark-mode-shadow "
                     : "bg-[--icewhite] dark-shadow "
-                }`}
+                  }`}
               />
             ))}
             <textarea
@@ -289,11 +253,10 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 setLastUpdatedField(contactData.textarea.name);
               }}
               onChange={handleInputChange}
-              className={`${
-                theme === "dark"
+              className={`${theme === "dark"
                   ? "bg-[--blackblue] dark-mode-shadow"
                   : "bg-[--icewhite] dark-shadow"
-              }`}
+                }`}
             />
             <div className="privacy-checkbox flex gap-16">
               <label

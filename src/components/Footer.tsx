@@ -88,9 +88,6 @@ const Footer: React.FC = () => {
         ))}
       </div>
       <div>
-        <Suspense fallback={<div>Loading...</div>}>
-          <LazyServiceStatus />
-        </Suspense>
       </div>
     </footer>
   );
